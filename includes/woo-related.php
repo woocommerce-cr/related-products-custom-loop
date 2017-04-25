@@ -151,7 +151,6 @@ if ( $products->have_posts() ) : ?>
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 				<li class="inl">
-					<span class="content-tag">Save <?php the_field('post_type_save'); ?></span>
 					<i class="preview-image" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"></i>
 					<h3>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
